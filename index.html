@@ -29,12 +29,64 @@
 		<!-- header -->
 		<header class="header" id="header">
 			<div class="container">
-				<div class="header__wrapper"></div>
+				<div class="header__wrapper">
+					<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+						<span class="hamburger__inner"></span>
+						<span class="hamburger__inner"></span>
+					</button>
+					<a href="index.html" class="header__logotype">
+						<img src="img/logotype.svg" width="146" height="83" alt="YES MAN" class="desktop">
+						<img src="img/logotype-sm.svg" width="157" height="36.5" alt="YES MAN" class="mobile">
+						<img src="img/logotype-sm-yellow.svg" width="157" height="36.5" alt="YES MAN" class="mobile fixed">
+					</a>
+					<div class="header__inner">
+						<div class="c-icons-socnav header__socnav">
+							<ul class="c-icons-socnav__list">
+								<li class="c-icons-socnav__item">
+									<a href="#" class="c-icons-socnav__link">
+										<svg class="c-icons-socnav__icon">
+											<use xlink:href="img/sprite.svg#icon-tg"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="c-icons-socnav__item">
+									<a href="#" class="c-icons-socnav__link">
+										<svg class="c-icons-socnav__icon">
+											<use xlink:href="img/sprite.svg#icon-whapp"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<a href="#" class="header__basket">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-basket"></use>
+							</svg>
+							<span>2</span>
+						</a>
+					</div>
+				</div>
 			</div>
 		</header>
 		<!-- end of header -->
 		<!-- content -->
 		<div class="wrapper__content">
+			<!-- main -->
+			<div class="main" id="main">
+				<div class="container">
+					<div class="main__bg">
+						<video loop muted playsinline autoplay poster="img/main-bg.jpg">
+							<source src="video/main-bg.mp4" type="video/mp4">
+						</video>
+					</div>
+					<a href="#collection" class="main__go-to">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-arrow-bottom"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<!-- end of main -->
 			<!-- collection -->
 			<section class="collection" id="collection">
 				<div class="container">
@@ -179,6 +231,42 @@
 				</div>
 			</section>
 			<!-- end of collection -->
+			<!-- promo collection -->
+			<div class="promo-collection">
+				<div class="container">
+					<div class="promo-collection__wrapper">
+						<a href="#" class="promo-collection__item">
+							<div class="promo-collection__body">
+								<span class="promo-collection__title">КОЛЛЕКЦИЯ ВЕСНА-ЛЕТО</span>
+								<span class="promo-collection__link">
+									<span>Смотреть</span>
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+									</svg>
+								</span>
+							</div>
+							<picture class="promo-collection__bg">
+								<img src="img/promo-collection-01.jpg" alt="Image">
+							</picture>
+						</a>
+						<a href="#" class="promo-collection__item">
+							<div class="promo-collection__body">
+								<span class="promo-collection__title">КОЛЛЕКЦИЯ ОСЕНЬ-ЗИМА</span>
+								<span class="promo-collection__link">
+									<span>Смотреть</span>
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+									</svg>
+								</span>
+							</div>
+							<picture class="promo-collection__bg">
+								<img src="img/promo-collection-02.jpg" alt="Image">
+							</picture>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- end of promo collection -->
 			<!-- advantages -->
 			<div class="advantages" id="advantages">
 				<div class="container">
@@ -244,7 +332,7 @@
 				<div class="footer__wrapper">
 					<div class="footer__block">
 						<picture class="footer__logotype">
-							<img src="img/logotype-white.svg" width="250" height="58" alt="YESMAN">
+							<img src="img/logotype-white.svg" width="250" height="58" alt="YES MAN">
 						</picture>
 						<ul class="footer__list">
 							<li class="footer__list-item">
