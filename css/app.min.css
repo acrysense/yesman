@@ -1470,6 +1470,62 @@ svg {
     margin-top: 50px;
   }
 }
+.advantages__slider {
+  position: relative;
+  z-index: 1;
+}
+.advantages__slider .swiper-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px auto 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.advantages__slider .swiper-pagination-lock {
+  display: none;
+}
+.advantages__slider .swiper-pagination-bullet {
+  position: relative;
+  z-index: 1;
+  display: block;
+  overflow: hidden;
+  min-width: 14px;
+  width: 14px;
+  height: 14px;
+  background: rgba(163, 163, 163, 0.35);
+  border-radius: 50%;
+}
+.advantages__slider .swiper-pagination-bullet::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#EACDA3), to(#D6AE7B));
+  background: linear-gradient(90deg, #EACDA3 0%, #D6AE7B 100%);
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.advantages__slider .swiper-pagination-bullet + .swiper-pagination-bullet {
+  margin-left: 20px;
+}
+.advantages__slider .swiper-pagination-bullet-active::before {
+  opacity: 1;
+}
+.advantages__slide {
+  text-align: center;
+}
 .advantages__icon {
   display: block;
   overflow: hidden;
@@ -1549,9 +1605,10 @@ svg {
   position: relative;
   z-index: 1;
   display: block;
+  max-height: 100%;
   width: calc(100% - 535px);
 }
-.brand-philosophy__img img {
+.brand-philosophy__img video {
   display: block;
   width: 100%;
   height: 100%;
@@ -1577,6 +1634,15 @@ svg {
   .brand-philosophy__img {
     margin: 0 -20px;
     width: calc(100% + 40px);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .brand-philosophy__img {
+    height: 85svh;
+  }
+}
+@media screen and (max-width: 767px) {
+  .brand-philosophy__img {
     height: 70svh;
   }
 }
