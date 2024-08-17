@@ -1606,7 +1606,7 @@ svg {
   position: relative;
   z-index: 1;
   display: block;
-  width: calc(100% - 535px);
+  width: 50vw;
   height: 100svh;
   background: #000000;
 }
@@ -1617,12 +1617,7 @@ svg {
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media screen and (min-width: 1441px) {
-  .brand-philosophy__img {
-    margin-left: -100px;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .brand-philosophy__img {
     margin-left: calc(50% - 50vw);
   }
@@ -1650,7 +1645,7 @@ svg {
 }
 @media screen and (min-width: 1024px) and (max-width: 1199px) {
   .brand-philosophy__body {
-    padding: 75px 0 75px 50px;
+    padding: 75px 0 75px 40px;
     max-width: 535px;
   }
 }
@@ -1702,6 +1697,11 @@ svg {
 .brand-philosophy__content b, .brand-philosophy__content strong {
   font-weight: bold;
 }
+@media screen and (max-width: 1199px) {
+  .brand-philosophy__content br {
+    display: none;
+  }
+}
 @media screen and (max-width: 1023px) {
   .brand-philosophy__content {
     margin-top: 50px;
@@ -1712,9 +1712,6 @@ svg {
   }
   .brand-philosophy__content > *:last-child {
     margin-bottom: 0;
-  }
-  .brand-philosophy__content br {
-    display: none;
   }
 }
 .brand-philosophy__btn {
