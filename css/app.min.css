@@ -850,6 +850,7 @@ svg {
   display: block;
   width: 100%;
   height: 100%;
+  background: #000000;
 }
 .main__bg::before {
   content: "";
@@ -1605,8 +1606,9 @@ svg {
   position: relative;
   z-index: 1;
   display: block;
-  max-height: 100%;
   width: calc(100% - 535px);
+  height: 100svh;
+  background: #000000;
 }
 .brand-philosophy__img video {
   display: block;
@@ -1636,14 +1638,9 @@ svg {
     width: calc(100% + 40px);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
   .brand-philosophy__img {
-    height: 85svh;
-  }
-}
-@media screen and (max-width: 767px) {
-  .brand-philosophy__img {
-    height: 70svh;
+    height: 100svh;
   }
 }
 .brand-philosophy__body {
