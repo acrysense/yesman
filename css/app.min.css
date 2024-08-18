@@ -231,6 +231,43 @@ svg {
 .header {
   position: relative;
   z-index: 600;
+  min-height: 163px;
+}
+@media screen and (max-width: 767px) {
+  .header {
+    min-height: 132px;
+  }
+  .header.is--fixed .header__fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: #FFFFFF;
+  }
+  .header.is--fixed .header__wrapper {
+    padding: 8px 0;
+    min-height: auto;
+  }
+  .header.is--fixed .header__logotype img:not(.fixed) {
+    opacity: 0;
+  }
+  .header.is--fixed .header__logotype img.fixed {
+    opacity: 1;
+  }
+  .header.is--fixed .header__basket > svg {
+    color: #D6AE7B;
+  }
+  .header.is--fixed .hamburger__inner {
+    background: #D6AE7B;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__fixed {
+    -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+    transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
+  }
 }
 .header__wrapper {
   position: relative;
@@ -245,12 +282,10 @@ svg {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 40px 0;
-  min-height: 163px;
 }
 @media screen and (max-width: 767px) {
   .header__wrapper {
     padding: 45px 0;
-    min-height: 132px;
   }
 }
 .header__logotype {
@@ -863,8 +898,7 @@ svg {
   display: block;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), color-stop(48.5%, rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.75)));
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.35) 48.5%, rgba(0, 0, 0, 0.75) 100%);
+  background: rgba(0, 0, 0, 0.4);
 }
 .main__bg video {
   display: block;
@@ -1607,7 +1641,7 @@ svg {
   z-index: 1;
   display: block;
   width: 50vw;
-  height: 100svh;
+  height: 800px;
   background: #000000;
 }
 .brand-philosophy__img video {
