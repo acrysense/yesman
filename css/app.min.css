@@ -233,32 +233,34 @@ svg {
   z-index: 600;
   min-height: 163px;
 }
+.header.is--fixed .header__fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.25);
+}
+.header.is--fixed .header__logotype img:not(.fixed) {
+  opacity: 0;
+}
+.header.is--fixed .header__logotype img.fixed {
+  opacity: 1;
+}
+.header.is--fixed .header__basket > svg {
+  color: #D6AE7B;
+}
+.header.is--fixed .hamburger__inner {
+  background: #D6AE7B;
+}
+.header.is--fixed .c-icons-socnav__icon {
+  color: #D6AE7B;
+}
 @media screen and (max-width: 767px) {
   .header {
     min-height: 132px;
   }
-  .header.is--fixed .header__fixed {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    background: #FFFFFF;
-  }
   .header.is--fixed .header__wrapper {
     padding: 8px 0;
-    min-height: auto;
-  }
-  .header.is--fixed .header__logotype img:not(.fixed) {
-    opacity: 0;
-  }
-  .header.is--fixed .header__logotype img.fixed {
-    opacity: 1;
-  }
-  .header.is--fixed .header__basket > svg {
-    color: #D6AE7B;
-  }
-  .header.is--fixed .hamburger__inner {
-    background: #D6AE7B;
   }
 }
 @media screen and (max-width: 767px) {
@@ -312,6 +314,9 @@ svg {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.header__logotype img.fixed {
+  opacity: 0;
+}
 @media screen and (min-width: 768px) {
   .header__logotype img.mobile {
     display: none;
@@ -325,9 +330,6 @@ svg {
   }
   .header__logotype img.desktop {
     display: none;
-  }
-  .header__logotype img.fixed {
-    opacity: 0;
   }
 }
 .header__inner {
