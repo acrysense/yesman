@@ -318,6 +318,7 @@ svg {
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: 5px;
+  padding-top: 1px;
   min-width: 22px;
   width: 22px;
   height: 22px;
@@ -328,6 +329,9 @@ svg {
   color: #FFFFFF;
   background: #D6AE7B;
   border-radius: 50%;
+}
+.filter-select-box__placeholder > .value.is--hidden {
+  display: none;
 }
 .filter-select-box__placeholder > * + * {
   margin-left: 10px;
@@ -369,14 +373,14 @@ svg {
 .filter-select-box__input {
   display: none;
 }
-.filter-select-box__input:checked ~ .select-box__group .select-box__title {
+.filter-select-box__input:checked ~ .filter-select-box__group .filter-select-box__title {
   color: #D6AE7B;
 }
 .filter-select-box__group {
   width: 100%;
 }
 @media screen and (hover: hover) {
-  .filter-select-box__group:hover .select-box__title {
+  .filter-select-box__group:hover .filter-select-box__title {
     color: #D6AE7B;
   }
 }
@@ -516,6 +520,11 @@ svg {
   text-align: center;
   border: 1px solid rgba(23, 23, 23, 0.25);
 }
+@media screen and (max-width: 767px) {
+  .c-quantity__inner {
+    padding: 11.5px 14px;
+  }
+}
 .c-quantity__btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -526,6 +535,7 @@ svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0;
   padding: 0;
   min-width: 20px;
   width: 20px;
@@ -545,6 +555,11 @@ svg {
   width: 10px;
   height: 10px;
   color: #171717;
+}
+@media screen and (hover: hover) {
+  .c-quantity__btn:hover > svg {
+    color: #D6AE7B;
+  }
 }
 .c-quantity__value {
   -webkit-appearance: none;
@@ -1312,9 +1327,15 @@ svg {
 .collection {
   padding: 100px 0;
 }
+.collection--inner {
+  padding: 75px 0 100px;
+}
 @media screen and (max-width: 767px) {
   .collection {
     padding: 75px 0;
+  }
+  .collection--inner {
+    padding: 40px 0 75px;
   }
 }
 .collection__top {
@@ -1345,6 +1366,16 @@ svg {
             align-items: center;
     text-align: center;
   }
+  .collection__top--center {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: left;
+  }
 }
 @media screen and (max-width: 767px) {
   .collection__top {
@@ -1366,6 +1397,42 @@ svg {
     font-size: 36px;
   }
 }
+.collection__filter-trigger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 10px;
+  padding: 0;
+  min-width: 50px;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  background: #D6AE7B;
+  border: none;
+  border-radius: 50%;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.collection__filter-trigger:focus {
+  outline: none;
+}
+.collection__filter-trigger > svg {
+  min-width: 30px;
+  width: 30px;
+  height: 20px;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 1024px) {
+  .collection__filter-trigger {
+    display: none;
+  }
+}
 .collection__btn {
   margin-left: 40px;
 }
@@ -1384,8 +1451,10 @@ svg {
     display: none;
   }
 }
-.collection__filter {
-  margin-bottom: 46px;
+@media screen and (min-width: 1024px) {
+  .collection__filter {
+    margin-bottom: 46px;
+  }
 }
 @media screen and (max-width: 767px) {
   .collection__slider .swiper {
@@ -1446,7 +1515,24 @@ svg {
 
 @media screen and (max-width: 1023px) {
   .collection-filter {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
     display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
+    height: 100dvh;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
   }
 }
 .collection-filter__wrapper {
@@ -1457,6 +1543,15 @@ svg {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+}
+@media screen and (max-width: 1023px) {
+  .collection-filter__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #FFFFFF;
+  }
 }
 .collection-filter__item + .collection-filter__item {
   margin-left: 60px;
