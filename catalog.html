@@ -85,102 +85,244 @@
 							</svg>
 						</button>
 					</div>
-					<div class="collection-filter collection__filter">
+					<div class="collection-dropdown-filter collection__filter collection__filter--mobile">
+						<div class="collection-dropdown-filter__wrapper">
+							<button class="collection-dropdown-filter__close" aria-label="Закрыть">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-close"></use>
+								</svg>
+							</button>
+							<h3 class="collection-dropdown-filter__title">Фильтры</h3>
+							<div class="collection-dropdown-filter__item">
+								<div class="filter-select-box filter-select-box--multiple collection-dropdown-filter__select">
+									<div class="filter-select-box__placeholder">
+										<span>Сортировать</span>
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-caret"></use>
+										</svg>
+									</div>
+									<div class="filter-select-box__container">
+										<div class="filter-select-box__checkboxes">
+											<div class="filter-select-box__checkbox">
+												<input type="radio" name="select-sort" class="filter-select-box__input" id="select-sort-dropdown-01" checked>
+												<label for="select-sort-dropdown-01" class="filter-select-box__group">
+													<span class="filter-select-box__title">По умолчанию</span>
+													<span class="filter-select-box__icon"></span>
+												</label>
+											</div>
+											<div class="filter-select-box__checkbox">
+												<input type="radio" name="select-sort" class="filter-select-box__input" id="select-sort-dropdown-02">
+												<label for="select-sort-dropdown-02" class="filter-select-box__group">
+													<span class="filter-select-box__title">По возрастанию цены</span>
+													<span class="filter-select-box__icon"></span>
+												</label>
+											</div>
+											<div class="square-checkbox filter-select-box__checkbox">
+												<input type="radio" name="select-sort" class="filter-select-box__input" id="select-sort-dropdown-03">
+												<label for="select-sort-dropdown-03" class="filter-select-box__group">
+													<span class="filter-select-box__title">По убыванию цены</span>
+													<span class="filter-select-box__icon"></span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="collection-dropdown-filter__item">
+								<div class="filter-select-box filter-select-box--multiple collection-dropdown-filter__select">
+									<div class="filter-select-box__placeholder">
+										<span>Размер одежды</span>
+										<span class="value is--hidden"></span>
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-caret"></use>
+										</svg>
+									</div>
+									<div class="filter-select-box__container">
+										<div class="filter-select-box__checkboxes">
+											<div class="filter-select-box__checkbox">
+												<input type="checkbox" name="select-size" class="filter-select-box__input" id="select-size-dropdown-01">
+												<label for="select-size-dropdown-01" class="filter-select-box__group">
+													<span class="filter-select-box__title">S</span>
+													<span class="filter-select-box__icon"></span>
+												</label>
+											</div>
+											<div class="square-checkbox filter-select-box__checkbox">
+												<input type="checkbox" name="select-size" class="filter-select-box__input" id="select-size-dropdown-02">
+												<label for="select-size-dropdown-02" class="filter-select-box__group">
+													<span class="filter-select-box__title">M</span>
+													<span class="filter-select-box__icon"></span>
+												</label>
+											</div>
+											<div class="square-checkbox filter-select-box__checkbox">
+												<input type="checkbox" name="select-size" class="filter-select-box__input" id="select-size-dropdown-03">
+												<label for="select-size-dropdown-03" class="filter-select-box__group">
+													<span class="filter-select-box__title">L</span>
+													<span class="filter-select-box__icon"></span>
+												</label>
+											</div>
+											<div class="square-checkbox filter-select-box__checkbox">
+												<input type="checkbox" name="select-size" class="filter-select-box__input" id="select-size-dropdown-04">
+												<label for="select-size-dropdown-04" class="filter-select-box__group">
+													<span class="filter-select-box__title">XL</span>
+													<span class="filter-select-box__icon"></span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="collection-dropdown-filter__item">
+								<span class="collection-dropdown-filter__label">Цвет</span>
+								<div class="collection-dropdown-filter__colors">
+									<button class="collection-dropdown-filter__color is--active" style="--bg-color: #514535;" data-color="brown" aria-label="Коричневый цвет"></button>
+									<button class="collection-dropdown-filter__color" style="--bg-color: #262525;" data-color="black" aria-label="Чёрный цвет"></button>
+									<button class="collection-dropdown-filter__color" style="--bg-color: #222630;" data-color="blue" aria-label="Синий цвет"></button>
+								</div>
+							</div>
+							<div class="collection-dropdown-filter__item">
+								<span class="collection-dropdown-filter__label">ЦЕНА</span>
+								<div class="input-prices collection-dropdown-filter__prices">
+									<div class="input-prices__inner">
+										<input type="number" class="input-prices__input" placeholder="от">
+										<input type="number" class="input-prices__input" placeholder="до">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="collection-filter collection__filter collection__filter--desktop">
 						<div class="collection-filter__wrapper">
-							<div class="filter-select-box filter-select-box--multiple collection-filter__item">
-								<div class="filter-select-box__placeholder">
-									<span>Размер одежды</span>
-									<span class="value is--hidden"></span>
-									<svg>
-										<use xlink:href="img/sprite.svg#icon-caret"></use>
-									</svg>
-								</div>
-								<div class="filter-select-box__container">
-									<div class="filter-select-box__checkboxes">
-										<div class="filter-select-box__checkbox">
-											<input type="checkbox" name="select-size" class="filter-select-box__input" id="select-size-01">
-											<label for="select-size-01" class="filter-select-box__group">
-												<span class="filter-select-box__title">S</span>
-											</label>
-										</div>
-										<div class="square-checkbox filter-select-box__checkbox">
-											<input type="checkbox" name="select-size" class="filter-select-box__input" id="select-size-02">
-											<label for="select-size-02" class="filter-select-box__group">
-												<span class="filter-select-box__title">M</span>
-											</label>
-										</div>
-										<div class="square-checkbox filter-select-box__checkbox">
-											<input type="checkbox" name="select-size" class="filter-select-box__input" id="select-size-03">
-											<label for="select-size-03" class="filter-select-box__group">
-												<span class="filter-select-box__title">L</span>
-											</label>
-										</div>
-										<div class="square-checkbox filter-select-box__checkbox">
-											<input type="checkbox" name="select-size" class="filter-select-box__input" id="select-size-04">
-											<label for="select-size-04" class="filter-select-box__group">
-												<span class="filter-select-box__title">XL</span>
-											</label>
+							<div class="collection-filter__item">
+								<div class="filter-select-box filter-select-box--multiple collection-filter__select">
+									<div class="filter-select-box__placeholder">
+										<span>Размер одежды</span>
+										<span class="value is--hidden"></span>
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-caret"></use>
+										</svg>
+									</div>
+									<div class="filter-select-box__container">
+										<div class="filter-select-box__checkboxes">
+											<div class="filter-select-box__checkbox">
+												<input type="checkbox" name="select-size" class="filter-select-box__input" id="select-size-01">
+												<label for="select-size-01" class="filter-select-box__group">
+													<span class="filter-select-box__title">S</span>
+													<span class="filter-select-box__icon"></span>
+												</label>
+											</div>
+											<div class="square-checkbox filter-select-box__checkbox">
+												<input type="checkbox" name="select-size" class="filter-select-box__input" id="select-size-02">
+												<label for="select-size-02" class="filter-select-box__group">
+													<span class="filter-select-box__title">M</span>
+													<span class="filter-select-box__icon"></span>
+												</label>
+											</div>
+											<div class="square-checkbox filter-select-box__checkbox">
+												<input type="checkbox" name="select-size" class="filter-select-box__input" id="select-size-03">
+												<label for="select-size-03" class="filter-select-box__group">
+													<span class="filter-select-box__title">L</span>
+													<span class="filter-select-box__icon"></span>
+												</label>
+											</div>
+											<div class="square-checkbox filter-select-box__checkbox">
+												<input type="checkbox" name="select-size" class="filter-select-box__input" id="select-size-04">
+												<label for="select-size-04" class="filter-select-box__group">
+													<span class="filter-select-box__title">XL</span>
+													<span class="filter-select-box__icon"></span>
+												</label>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="filter-select-box filter-select-box--multiple collection-filter__item">
-								<div class="filter-select-box__placeholder">
-									<span>Цвет</span>
-									<span class="value is--hidden"></span>
-									<svg>
-										<use xlink:href="img/sprite.svg#icon-caret"></use>
-									</svg>
-								</div>
-								<div class="filter-select-box__container">
-									<div class="filter-select-box__checkboxes">
-										<div class="filter-select-box__checkbox">
-											<input type="checkbox" name="select-color" class="filter-select-box__input" id="select-color-01">
-											<label for="select-color-01" class="filter-select-box__group">
-												<span class="filter-select-box__title">Белый</span>
-											</label>
-										</div>
-										<div class="square-checkbox filter-select-box__checkbox">
-											<input type="checkbox" name="select-color" class="filter-select-box__input" id="select-color-02">
-											<label for="select-color-02" class="filter-select-box__group">
-												<span class="filter-select-box__title">Чёрный</span>
-											</label>
-										</div>
-										<div class="square-checkbox filter-select-box__checkbox">
-											<input type="checkbox" name="select-color" class="filter-select-box__input" id="select-color-03">
-											<label for="select-color-03" class="filter-select-box__group">
-												<span class="filter-select-box__title">Синий</span>
-											</label>
+							<div class="collection-filter__item">
+								<div class="filter-select-box filter-select-box--multiple collection-filter__select">
+									<div class="filter-select-box__placeholder">
+										<span>Цвет</span>
+										<span class="value is--hidden"></span>
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-caret"></use>
+										</svg>
+									</div>
+									<div class="filter-select-box__container">
+										<div class="filter-select-box__checkboxes">
+											<div class="filter-select-box__checkbox">
+												<input type="checkbox" name="select-color" class="filter-select-box__input" id="select-color-01">
+												<label for="select-color-01" class="filter-select-box__group">
+													<span class="filter-select-box__title">Белый</span>
+													<span class="filter-select-box__icon"></span>
+												</label>
+											</div>
+											<div class="square-checkbox filter-select-box__checkbox">
+												<input type="checkbox" name="select-color" class="filter-select-box__input" id="select-color-02">
+												<label for="select-color-02" class="filter-select-box__group">
+													<span class="filter-select-box__title">Чёрный</span>
+													<span class="filter-select-box__icon"></span>
+												</label>
+											</div>
+											<div class="square-checkbox filter-select-box__checkbox">
+												<input type="checkbox" name="select-color" class="filter-select-box__input" id="select-color-03">
+												<label for="select-color-03" class="filter-select-box__group">
+													<span class="filter-select-box__title">Синий</span>
+													<span class="filter-select-box__icon"></span>
+												</label>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="filter-select-box collection-filter__item">
-								<div class="filter-select-box__placeholder">
-									<span>По умолчанию</span>
-									<svg>
-										<use xlink:href="img/sprite.svg#icon-caret"></use>
-									</svg>
+							<div class="collection-filter__item">
+								<div class="filter-select-box collection-filter__select">
+									<div class="filter-select-box__placeholder">
+										<span>Цена</span>
+										<span class="value is--hidden"></span>
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-caret"></use>
+										</svg>
+									</div>
+									<div class="filter-select-box__container">
+										<div class="filter-select-box__wrapper">
+											<div class="input-prices filter-select-box__prices">
+												<div class="input-prices__inner">
+													<input type="number" class="input-prices__input" placeholder="от">
+													<input type="number" class="input-prices__input" placeholder="до">
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="filter-select-box__container">
-									<div class="filter-select-box__checkboxes">
-										<div class="filter-select-box__checkbox">
-											<input type="radio" name="select-sort" class="filter-select-box__input" id="select-sort-01">
-											<label for="select-sort-01" class="filter-select-box__group">
-												<span class="filter-select-box__title">По умолчанию</span>
-											</label>
-										</div>
-										<div class="filter-select-box__checkbox">
-											<input type="radio" name="select-sort" class="filter-select-box__input" id="select-sort-02">
-											<label for="select-sort-02" class="filter-select-box__group">
-												<span class="filter-select-box__title">По возрастанию цены</span>
-											</label>
-										</div>
-										<div class="square-checkbox filter-select-box__checkbox">
-											<input type="radio" name="select-sort" class="filter-select-box__input" id="select-sort-03">
-											<label for="select-sort-03" class="filter-select-box__group">
-												<span class="filter-select-box__title">По убыванию цены</span>
-											</label>
+							</div>
+							<div class="collection-filter__item">
+								<div class="filter-select-box collection-filter__select">
+									<div class="filter-select-box__placeholder">
+										<span>По умолчанию</span>
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-caret"></use>
+										</svg>
+									</div>
+									<div class="filter-select-box__container">
+										<div class="filter-select-box__checkboxes">
+											<div class="filter-select-box__checkbox">
+												<input type="radio" name="select-sort" class="filter-select-box__input" id="select-sort-01">
+												<label for="select-sort-01" class="filter-select-box__group">
+													<span class="filter-select-box__title">По умолчанию</span>
+													<span class="filter-select-box__icon"></span>
+												</label>
+											</div>
+											<div class="filter-select-box__checkbox">
+												<input type="radio" name="select-sort" class="filter-select-box__input" id="select-sort-02">
+												<label for="select-sort-02" class="filter-select-box__group">
+													<span class="filter-select-box__title">По возрастанию цены</span>
+													<span class="filter-select-box__icon"></span>
+												</label>
+											</div>
+											<div class="square-checkbox filter-select-box__checkbox">
+												<input type="radio" name="select-sort" class="filter-select-box__input" id="select-sort-03">
+												<label for="select-sort-03" class="filter-select-box__group">
+													<span class="filter-select-box__title">По убыванию цены</span>
+													<span class="filter-select-box__icon"></span>
+												</label>
+											</div>
 										</div>
 									</div>
 								</div>
