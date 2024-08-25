@@ -524,6 +524,65 @@ svg {
   width: 100%;
 }
 
+.btn-checkbox {
+  display: block;
+  margin: 0;
+}
+.btn-checkbox__input {
+  display: none;
+}
+.btn-checkbox__input:checked ~ .btn-checkbox__group {
+  color: #FFFFFF;
+  background: #171717;
+  border-color: #171717;
+}
+.btn-checkbox__input[disabled] {
+  pointer-events: none;
+}
+.btn-checkbox__input[disabled] ~ .btn-checkbox__group {
+  color: rgba(23, 23, 23, 0.35);
+  background: #ECECEC;
+  border-color: #ECECEC;
+  pointer-events: none;
+}
+.btn-checkbox__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15.5px 10px;
+  width: 100%;
+  text-align: center;
+  color: #171717;
+  border: 1px solid rgba(23, 23, 23, 0.25);
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+@media screen and (hover: hover) {
+  .btn-checkbox__group:hover {
+    color: #FFFFFF;
+    background: #171717;
+  }
+}
+.btn-checkbox__title {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .btn-checkbox__title {
+    font-size: 18px;
+  }
+}
+
 .c-powered-by__label {
   display: block;
   margin-bottom: 12px;
@@ -3010,6 +3069,36 @@ svg {
 @media screen and (max-width: 767px) {
   .product__btn, .product__select {
     width: 100%;
+  }
+}
+.product__sizes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .product__size {
+    width: calc(50% - 12.5px);
+  }
+  .product__size:nth-child(2n) {
+    margin-left: 25px;
+  }
+  .product__size:nth-child(n+3) {
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .product__size {
+    width: calc(50% - 10px);
+  }
+  .product__size:nth-child(2n) {
+    margin-left: 20px;
+  }
+  .product__size:nth-child(n+3) {
+    margin-top: 20px;
   }
 }
 .product__quantity {
