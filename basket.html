@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>YES MAN - Корзиина</title>
+	<meta property="og:title" content="YES MAN - Корзиина">
+	<meta property="og:description" content="Описание">
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="YES MAN - Корзиина">
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header header--inner" id="header">
+			<div class="header__fixed">
+				<div class="container">
+					<div class="header__wrapper">
+						<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+						</button>
+						<a href="index.html" class="header__logotype">
+							<img src="img/logotype.svg" width="146" height="83" alt="YES MAN" class="desktop">
+							<img src="img/logotype-yellow.svg" width="146" height="83" alt="YES MAN" class="desktop fixed">
+							<img src="img/logotype-sm.svg" width="157" height="36.5" alt="YES MAN" class="mobile">
+							<img src="img/logotype-sm-yellow.svg" width="157" height="36.5" alt="YES MAN" class="mobile fixed">
+						</a>
+						<div class="header__inner">
+							<div class="c-icons-socnav header__socnav">
+								<ul class="c-icons-socnav__list">
+									<li class="c-icons-socnav__item">
+										<a href="#" class="c-icons-socnav__link">
+											<svg class="c-icons-socnav__icon">
+												<use xlink:href="img/sprite.svg#icon-tg"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="c-icons-socnav__item">
+										<a href="#" class="c-icons-socnav__link">
+											<svg class="c-icons-socnav__icon">
+												<use xlink:href="img/sprite.svg#icon-whapp"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<a href="#" class="header__basket">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-basket"></use>
+								</svg>
+								<span>2</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- end of header -->
+		<!-- content -->
+		<div class="wrapper__content">
+			<!-- basket -->
+			<section class="basket" id="basket">
+				<div class="container">
+					<h1 class="basket__heading">Корзина</h1>
+					<div class="basket__wrap">
+						<div class="basket__left">
+							<div class="basket__wrapper">
+								<div class="basket-card basket__item">
+									<div class="basket-card__wrapper">
+										<picture class="basket-card__img">
+											<img src="img/product-01.jpg" alt="Image">
+										</picture>
+										<div class="basket-card__body">
+											<a href="#" class="basket-card__title">Название позиции YES MAN </a>
+											<div class="basket-card__elems">
+												<span class="basket-card__elem">Цвет: белый</span>
+												<span class="basket-card__elem">Размер: 00</span>
+											</div>
+											<span class="basket-card__price">5 700 ₽ </span>
+										</div>
+									</div>
+									<div class="basket-card__controls">
+										<div class="c-quantity basket-card__quantity">
+											<div class="c-quantity__inner">
+												<button class="c-quantity__btn c-quantity__btn--minus">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-minus"></use>
+													</svg>
+												</button>
+												<input type="number" class="c-quantity__value" value="3">
+												<button class="c-quantity__btn c-quantity__btn--plus">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-plus"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+										<button class="basket-card__delete" aria-label="Удалить">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-close-bold"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="basket-card basket__item">
+									<div class="basket-card__wrapper">
+										<picture class="basket-card__img">
+											<img src="img/product-01.jpg" alt="Image">
+										</picture>
+										<div class="basket-card__body">
+											<a href="#" class="basket-card__title">Название позиции YES MAN </a>
+											<div class="basket-card__elems">
+												<span class="basket-card__elem">Цвет: белый</span>
+												<span class="basket-card__elem">Размер: 00</span>
+											</div>
+											<span class="basket-card__price">5 700 ₽ </span>
+										</div>
+									</div>
+									<div class="basket-card__controls">
+										<div class="c-quantity basket-card__quantity">
+											<div class="c-quantity__inner">
+												<button class="c-quantity__btn c-quantity__btn--minus">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-minus"></use>
+													</svg>
+												</button>
+												<input type="number" class="c-quantity__value" value="1">
+												<button class="c-quantity__btn c-quantity__btn--plus">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-plus"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+										<button class="basket-card__delete" aria-label="Удалить">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-close-bold"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="basket-card basket__item">
+									<div class="basket-card__wrapper">
+										<picture class="basket-card__img">
+											<img src="img/product-01.jpg" alt="Image">
+										</picture>
+										<div class="basket-card__body">
+											<a href="#" class="basket-card__title">Название позиции YES MAN </a>
+											<div class="basket-card__elems">
+												<span class="basket-card__elem">Цвет: белый</span>
+												<span class="basket-card__elem">Размер: 00</span>
+											</div>
+											<span class="basket-card__price">5 700 ₽ </span>
+										</div>
+									</div>
+									<div class="basket-card__controls">
+										<div class="c-quantity basket-card__quantity">
+											<div class="c-quantity__inner">
+												<button class="c-quantity__btn c-quantity__btn--minus">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-minus"></use>
+													</svg>
+												</button>
+												<input type="number" class="c-quantity__value" value="1">
+												<button class="c-quantity__btn c-quantity__btn--plus">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-plus"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+										<button class="basket-card__delete" aria-label="Удалить">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-close-bold"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="basket__right">
+							<div class="basket-details basket__details">
+								<div class="basket-details__main">
+									<h3 class="basket-details__title">Детали заказа</h3>
+									<div class="basket-details__inner">
+										<span class="basket-details__label">Товары на сумму:</span>
+										<span class="basket-details__value">54 900 ₽</span>
+									</div>
+									<div class="basket-details__inner">
+										<span class="basket-details__label">Доставка:</span>
+										<span class="basket-details__value">500 ₽</span>
+									</div>
+									<div class="basket-details__inner">
+										<span class="basket-details__label">Скидка:</span>
+										<span class="basket-details__value basket-details__value--accent">– 37 800 ₽</span>
+									</div>
+								</div>
+								<div class="basket-details__total">
+									<div class="basket-details__inner">
+										<span class="basket-details__label"><b>Всего:</b></span>
+										<span class="basket-details__value"><b>17 600 ₽</b></span>
+									</div>
+								</div>
+							</div>
+							<form action="#" class="basket-form basket__form">
+								<div class="input-field basket-form__input">
+									<input type="text" class="input-field__input" placeholder="Введите имя">
+								</div>
+								<div class="input-field basket-form__input">
+									<input type="tel" class="input-field__input" placeholder="Введите телефон" data-inputmask="'mask': '+7 (999) 999-99-99'">
+								</div>
+								<div class="input-field basket-form__input">
+									<input type="email" class="input-field__input" placeholder="Введите email">
+								</div>
+								<button class="basket-form__btn btn">Оформить заказ</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end of basket -->
+		</div>
+		<!-- end of content -->
+		<!-- footer -->
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__block">
+						<picture class="footer__logotype">
+							<img src="img/logotype-white.svg" width="250" height="58" alt="YES MAN">
+						</picture>
+						<ul class="footer__list">
+							<li class="footer__list-item">
+								<a href="#" class="footer__link">Политика конфиденциальности</a>
+							</li>
+						</ul>
+						<ul class="footer__list footer__list--mobile">
+							<li class="footer__list-item">
+								<a href="#" class="footer__link">Публичная оферта</a>
+							</li>
+							<li class="footer__list-item">
+								<a href="#" class="footer__link">Оплата, доставка и возврат</a>
+							</li>
+						</ul>
+						<p class="footer__copyright">© 2024. Все права защищены</p>
+					</div>
+					<div class="footer__block">
+						<div class="footer__group">
+							<span class="footer__label">Звоните с 10:00 до 22:00</span>
+							<a href="tel:+79151875035" class="footer__value">+7 (915) 187-50-35</a>
+						</div>
+						<ul class="footer__list footer__list--desktop">
+							<li class="footer__list-item">
+								<a href="#" class="footer__link">Публичная оферта</a>
+							</li>
+							<li class="footer__list-item">
+								<a href="#" class="footer__link">Оплата, доставка и возврат</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__block">
+						<div class="footer__group">
+							<span class="footer__label">Напишите нам:</span>
+							<a href="mailto:info@yesman-shop.ru" class="footer__value">info@yesman-shop.ru</a>
+						</div>
+						<div class="c-socnav footer__socnav">
+							<ul class="c-socnav__list">
+								<li class="c-socnav__item">
+									<a href="#" class="c-socnav__link">
+										<img src="img/icon-vk.svg" alt="Icon">
+									</a>
+								</li>
+								<li class="c-socnav__item">
+									<a href="#" class="c-socnav__link">
+										<img src="img/icon-tg.svg" alt="Icon">
+									</a>
+								</li>
+								<li class="c-socnav__item">
+									<a href="#" class="c-socnav__link">
+										<img src="img/icon-inst.svg" alt="Icon">
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__block">
+						<div class="c-powered-by footer__powered-by">
+							<span class="c-powered-by__label">Разработчик сайта:</span>
+							<a href="#" class="c-powered-by__img">
+								<img src="img/powered-by.svg" width="156" height="48" alt="Студия Зайцева">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end of footer -->
+	</div>
+	<!-- end of wrapper -->
+	<!-- menu -->
+	<div class="menu" id="menu">
+		<div class="menu__wrap">
+			<buttom class="menu__close" aria-label="Закрыть">
+				<svg>
+					<use xlink:href="img/sprite.svg#icon-close"></use>
+				</svg>
+			</buttom>
+			<div class="menu__top">
+				<picture class="menu__logotype">
+					<img src="img/logotype-black.svg" width="124" height="70" alt="YES MAN">
+				</picture>
+				<nav class="menu__nav">
+					<ul class="menu__list">
+						<li class="menu__list-item">
+							<a href="index.html#brand-philosophy" class="menu__link">о бренде</a>
+						</li>
+						<li class="menu__list-item">
+							<a href="#" class="menu__link">каталог</a>
+						</li>
+						<li class="menu__list-item">
+							<a href="#" class="menu__link">весна-лето 24</a>
+						</li>
+						<li class="menu__list-item">
+							<a href="#" class="menu__link">осень-зима 24</a>
+						</li>
+						<li class="menu__list-item">
+							<a href="#" class="menu__link">доставка и оплата</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="menu__bottom">
+				<div class="menu__group">
+					<span class="menu__label">Звоните с 10:00 до 22:00</span>
+					<a href="tel:+79151875035" class="menu__value">+7 (915) 187-50-35</a>
+				</div>
+				<div class="menu__group">
+					<span class="menu__label">Напишите нам:</span>
+					<a href="mailto:info@yesman-shop.ru" class="menu__value">info@yesman-shop.ru</a>
+				</div>
+				<div class="c-socnav menu__socnav">
+					<ul class="c-socnav__list">
+						<li class="c-socnav__item">
+							<a href="#" class="c-socnav__link">
+								<img src="img/icon-vk.svg" alt="Icon">
+							</a>
+						</li>
+						<li class="c-socnav__item">
+							<a href="#" class="c-socnav__link">
+								<img src="img/icon-tg.svg" alt="Icon">
+							</a>
+						</li>
+						<li class="c-socnav__item">
+							<a href="#" class="c-socnav__link">
+								<img src="img/icon-inst.svg" alt="Icon">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of menu -->
+	<!-- scripts -->
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
