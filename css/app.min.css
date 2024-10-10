@@ -811,6 +811,11 @@ svg {
 .c-quantity__value:focus {
   outline: none;
 }
+@media screen and (max-width: 767px) {
+  .c-quantity__value {
+    height: 29px;
+  }
+}
 
 .header {
   position: relative;
@@ -3170,6 +3175,7 @@ svg {
   }
   .product__quantity .c-quantity__value {
     max-width: none;
+    height: 35px;
   }
 }
 .product__content {
